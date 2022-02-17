@@ -6,7 +6,16 @@ void main() {
     title: "Meal App",
     home: const CategoriesScreen(),
     theme: ThemeData(
-      primarySwatch: Colors.blue,
+      colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.pink)
+          .copyWith(secondary: Colors.amber),
+      canvasColor: const Color.fromRGBO(255, 254, 229, 1),
+      fontFamily: 'Raleway',
+      textTheme: const TextTheme(
+        titleLarge: TextStyle(
+            fontSize: 20,
+            fontFamily: 'RobotoCondensed',
+            fontWeight: FontWeight.bold),
+      ),
     ),
   ));
 }
