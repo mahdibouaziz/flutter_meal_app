@@ -5,9 +5,10 @@ import 'package:flutter_meal_app/category_meals_screen.dart';
 void main() {
   runApp(MaterialApp(
     title: "Meal App",
-    home: const CategoriesScreen(),
+    initialRoute: '/', // the default one is '/'
     routes: {
-      '/categorie-meals': (ctx) => const CategoryMealsScreen()
+      '/': (ctx)=> const CategoriesScreen(),
+      CategoryMealsScreen.routeName: (ctx) => const CategoryMealsScreen()
     } ,
 
     theme: ThemeData(
