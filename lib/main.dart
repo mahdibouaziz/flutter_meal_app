@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_meal_app/categories_screen.dart';
+import 'package:flutter_meal_app/category_meals_screen.dart';
 
 void main() {
   runApp(MaterialApp(
     title: "Meal App",
     home: const CategoriesScreen(),
+    routes: {
+      '/categorie-meals': (ctx) => const CategoryMealsScreen()
+    } ,
+
     theme: ThemeData(
       colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.pink)
           .copyWith(secondary: Colors.amber),
