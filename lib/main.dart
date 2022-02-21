@@ -2,17 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:flutter_meal_app/screens/categories_screen.dart';
 import 'package:flutter_meal_app/screens/category_meals_screen.dart';
 import 'package:flutter_meal_app/screens/meal_detail_screen.dart';
+import 'package:flutter_meal_app/screens/tabs_screen.dart';
 
 void main() {
   runApp(MaterialApp(
     title: "Meal App",
     initialRoute: '/', // the default one is '/'
     routes: {
-      '/': (ctx)=> const CategoriesScreen(),
+      '/': (ctx) => const TabsScreen(),
       CategoryMealsScreen.routeName: (ctx) => const CategoryMealsScreen(),
       MealDetailScreen.routeName: (ctx) => const MealDetailScreen(),
     },
-    onUnknownRoute: (settings)=>  MaterialPageRoute(builder: (ctx)=>const CategoriesScreen()),
+    onUnknownRoute: (settings) =>
+        MaterialPageRoute(builder: (ctx) => const CategoriesScreen()),
 
     theme: ThemeData(
       colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.pink)
