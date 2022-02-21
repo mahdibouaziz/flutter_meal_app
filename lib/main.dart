@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_meal_app/screens/categories_screen.dart';
 import 'package:flutter_meal_app/screens/category_meals_screen.dart';
+import 'package:flutter_meal_app/screens/filters_screen.dart';
 import 'package:flutter_meal_app/screens/meal_detail_screen.dart';
 import 'package:flutter_meal_app/screens/tabs_screen.dart';
 
@@ -12,6 +13,7 @@ void main() {
       '/': (ctx) => const TabsScreen(),
       CategoryMealsScreen.routeName: (ctx) => const CategoryMealsScreen(),
       MealDetailScreen.routeName: (ctx) => const MealDetailScreen(),
+      FiltersScreen.routeName: (ctx) => const FiltersScreen(),
     },
     onUnknownRoute: (settings) =>
         MaterialPageRoute(builder: (ctx) => const CategoriesScreen()),
