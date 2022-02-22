@@ -51,7 +51,6 @@ class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
               imageUrl: displayedMeals[index].imageUrl,
               title: displayedMeals[index].title,
               id: displayedMeals[index].id,
-              removeItem: removeMeal,
             );
           },
           itemCount: displayedMeals.length,
